@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Your Deposit Kit</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<main class="container">
+
+		<h1>Your Deposit Kit</h1>
+
+		<p>Welcome! Your kit has been recognised.</p>
+
+		<h2>Kit Information</h2>
+
+		<p>Your unique kit ID is:</p>
+
+		<p><strong>{{ kit_id }}</strong></p>
+
+		<h2>How to use your kit</h2>
+
+		<ol>
+			<li>Take a photo before using the product.</li>
+			<li>Follow the instructions supplied with your kit.</li>
+			<li>Take a photo after using the product.</li>
+			<li>Submit your results through this website.</li>
+		</ol>
+
+		<p>Photo uploads will be added soon.</p>
+
+	</main>
+
+</body>
+</html>

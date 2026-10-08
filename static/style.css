@@ -1,0 +1,65 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f6;
+    color: #24352e;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container */
+.container {
+    max-width: 650px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Main heading */
+h1 {
+    color: #236b50;
+    font-size: 32px;
+}
+
+/* Secondary headings */
+h2 {
+    margin-top: 30px;
+    color: #24352e;
+}
+
+/* Paragraphs and instructions */
+p, li {
+    line-height: 1.7;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #236b50;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Change colour when hovering */
+button:hover {
+    background-color: #174d39;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+    .container {
+        margin: 20px;
+        padding: 24px;
+    }
+}
+

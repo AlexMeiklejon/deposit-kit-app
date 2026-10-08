@@ -1,0 +1,21 @@
+
+# Virtual environment
+.venv/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Local database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Passwords and environment variables
+.env
+.env.*
+
+# Mac system files
+.DS_Store
+

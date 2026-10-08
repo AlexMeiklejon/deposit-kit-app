@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Kit Usage Report</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+
+        <h1>Kit Scan Report</h1>
+
+        <p>
+            This report shows how many times each kit
+            webpage has been visited.
+        </p>
+
+ 
+<table border="1" cellpadding="12">
+    <thead>
+        <tr>
+            <th>Kit ID</th>
+            <th>Page Visits</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for kit_id, scan_count, status in results %}
+        <tr>
+            <td>{{ kit_id }}</td>
+            <td>{{ scan_count }}</td>
+            <td>{{ status }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+    </main>
+</body>
+</html>
+
